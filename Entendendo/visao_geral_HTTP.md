@@ -47,17 +47,17 @@ Exemplo:
 
   * REQUEST MESSAGE
 
-     GET/index.html HTTP/1.1
-     User-Agent: Mozilla/4.0
-     Accept: text/html
+    * GET/index.html HTTP/1.1
+      User-Agent: Mozilla/4.0
+      Accept: text/html
 
   * RESPONSE MESSAGE
 
-     HTTP/1.1 200 OK
-     Server: Express
-     Content-Type: text/html
+    * HTTP/1.1 200 OK
+      Server: Express
+      Content-Type: text/html
 
-     <html>....</html>
+      <html>....</html>
 
 * Headers 
   
