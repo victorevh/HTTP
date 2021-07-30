@@ -1,4 +1,4 @@
-## URI
+# URI
 
 * Uniform Resource Identifier
 
@@ -6,7 +6,7 @@
 
 É um identificador de recursos que trabalha de forma unica. A exemplo da minha pessoa, eu sou um recurso, onde tenho meu nome e minha localização, então se preciso me achar (recurso) tenho que saber desses itens.
 
-# Resource
+## Resource
 
 * O que é o Recurso?
 
@@ -20,7 +20,7 @@ Se podemos identificar, nomear, endereçar ou manipular, estamos falando de um r
 * Entidade Fisica (Produtos, Usuarios)
 
 
-# Locator
+## Locator
 
 * O que é o Localizador?
 
@@ -46,7 +46,7 @@ Dominios podem ser escritos em forma de ip
       * Quando utilizo o https:// implicitamente eu tenho a porta :443
    * Âncora (quando tenho uma ancora # tenho um local dentro do documento. exemplo: wwww.ok.com.br/index.html#algumlugar)
 
-# Name
+## Name
 
 é quando encontro o recurso pelo nome, mas não pelo local (não sei onde está o recurso)
 
