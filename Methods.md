@@ -1,12 +1,12 @@
 # METHODS
 
-## OPTIONS
-## GET
-## HEAD
-## POST
-## PUT
-## PATCH
-## DELETE
+* OPTIONS
+* GET
+* HEAD
+* POST
+* PUT
+* PATCH
+* DELETE
 
 ## HTTP Methods
 
