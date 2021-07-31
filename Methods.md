@@ -1,16 +1,3 @@
-# JSON Server
-
-https://github.com/typicode/json-server
-
-instalar json-server através do Curl: npm install -g json-server  (-g instala de uma maneira global na maquina)
-
-* mkdir (cria novo diretorio)
-* cd (entrar no diretorio)
-* vim db.json (criar json dentro do diretorio e colar o script conforme o tutorial do git. esc + :wp +enter)
-* json-server --watch db.json (para iniciar o JSON server)
-
-
-
 # METHODS
 
 * OPTIONS
@@ -59,3 +46,46 @@ HTTP METHOD
 * DELETE: IDEMPOTENCE
 * POST: NO
 * PATCH: NO
+
+## OPTIONS
+
+Vai servir para dar informações sobre a disponibilidade da requisição (Quais metodos estão disponiveis para mim)
+
+* no curl você pode usar (curl -X OPTIONS http://localhost:3000/post -i) para receber o cabeçalho e ver os Metodos permitidos de acesso
+
+## GET
+
+Serve para pegar um recurso / somente recebe dados
+* curl -v ou --get
+
+### Caracteristicas do GET
+
+* Seguro: SIM (Não faz alteração no servidor)
+* Idempotente: SIM (sempre que eu pedir a pagina vai ser entregue da mesma maneira)
+* BODY
+    * REQUEST: NÃO
+    * RESPONSE: SIM
+* Cacheable: SIM
+* Uso em formulários HTML: SIM
+
+no curl você pode usar o -v para obsevar informações do escopo desejado 
+
+* curl http://localhost:3000/posts\ ?q \ =json    \ ?q \ =..... é um filtro de pesquisa.
+
+
+
+## HEAD
+
+Semelhante ao GET, porém recebemos somente o cabeçalho HEAD / posts
+
+* para ver os cabeçalhos de resposta no curl -I ou --head
+
+### Caracteristicas do HEAD
+
+* Seguro: SIM (Não faz alteração no servidor)
+* Idempotente: SIM (sempre que eu pedir a pagina vai ser entregue da mesma maneira)
+* BODY
+    * REQUEST: NÃO
+    * RESPONSE: NÃO
+* Cacheable: SIM
+* Uso em formulários HTML: NÃO
