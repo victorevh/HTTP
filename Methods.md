@@ -108,3 +108,24 @@ Publicar / Cadastra um Recurso em algum lugar
 * Uso em formulários HTML: SIM (Posso cadastrar um usario no meu sistema usando esse metódo)
 * Poderá ser cacheable
 
+## PUT
+
+A diferença entre o POST e o PUT é que o PUT é indepotente ()
+
+Serve para criar um novo ou Atualizar um recurso (o uso definitivo do PUT é para atualizar um recurso)
+
+* Criação Status code 201
+* Atualização Status code 204 ou 401
+
+* para enviar dados usar comando curl -d '{ dados aqui }' 
+* -H é o cabecario EX:/ "Content-type: application/json" avisando que o conteudo que estou enviando é um json e por fim a rota com o -X PUT http://localhost:3000/profile
+
+### Caracteristicas do PUT
+
+* Seguro: NÃO (vai alterar algo no servidor)
+* Idempotente: SIM (Sempre a resposta é a mesma)
+* BODY
+    * Request: SIM
+    * Response: NÃO
+* Uso em formulários HTML: NÃO
+* Cacheable: NÃO
