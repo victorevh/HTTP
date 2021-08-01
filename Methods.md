@@ -89,3 +89,22 @@ Semelhante ao GET, porém recebemos somente o cabeçalho HEAD / posts
     * RESPONSE: NÃO
 * Cacheable: SIM
 * Uso em formulários HTML: NÃO
+
+## POST
+
+Publicar / Cadastra um Recurso em algum lugar
+
+* para enviar dados usar comando curl -d '{ dados aqui }' 
+* -H é o cabecario EX:/ "Content-type: application/json" avisando que o conteudo que estou enviando é um json e por fim a rota com o -X POST http://localhost:3000/posts
+* usar o comando cat no curl para visualizar o texto de determinado arquivo
+
+### Caracteristicas do POST
+
+* Seguro: NÃO (vai alterar algo no servidor)
+* Idempotente: NÃO (cada vez que eu fazer a rota de cadastro ele faz retornos diferentes (por conta dos cadastros diferentes) )
+* BODY
+    * Request
+    * Response
+* Uso em formulários HTML: SIM (Posso cadastrar um usario no meu sistema usando esse metódo)
+* Poderá ser cacheable
+
