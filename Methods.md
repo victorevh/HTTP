@@ -129,3 +129,42 @@ Serve para criar um novo ou Atualizar um recurso (o uso definitivo do PUT é par
     * Response: NÃO
 * Uso em formulários HTML: NÃO
 * Cacheable: NÃO
+
+## PATCH
+
+Serve para realizar uma modificação parcial de um recurso.
+
+* Para realizar uma modificação parcial no recurso basta 
+* Usar o comando curl -d '{dados aqui}' -H é o cabecario EX:/ "Content-type: application/json" avisando que o conteudo que estou enviando é um json e por fim a rota com o -X PATCH http://localhost:3000/posts/2 (importante especificar o ID do item a receber o patch no diretorio, no exemplo observamos o /posts/2)
+
+### Caracteristicas do PATCH
+
+* Seguro: NÃO (vai alterar algo no servidor)
+* Idempotente: NÂO (pode ocorrer retornos diferentes)
+* BODY
+    * Request: SIM
+    * Response: SIM
+* Uso em formulários HTML: NÃO
+* Cacheable: NÃO
+
+## DELETE
+
+Serve para remover um recurso
+
+* Para remover um recurso basta 
+* Usar o comando curl -X DELETE seguido pela URL http://localhost:3000/posts/4
+
+* Status Code DELETE
+    * 202: Accepeted
+    * 204: No content
+    * 200: OK
+
+### Caracteristicas do DELETE
+
+* Seguro: NÃO (faz alteração no servidor)
+* Idempotente: SIM (a resposta é sempre a mesma)
+* BODY
+    * Request: POSSIBILIDADE
+    * Response: POSSIBILIDADE
+* Uso em formulários HTML: NÃO
+* Cacheable: NÃO
