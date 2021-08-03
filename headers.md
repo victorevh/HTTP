@@ -30,7 +30,6 @@
 * content-type: (text/html)
 * content-encoding: (tipo de codificação do conteudo)
 * set-cookie: (pedido pro browser armazenar os cookies)
-* 
 
 ## Utilizar o DevDocs para buscar contéudos de diversos frameworks
 
