@@ -3,7 +3,7 @@
 * São informações adicionais para o pedido ou resposta 
 
 * Nome: valor 
-* Content-type: application/json * 
+* Content-type: application/json 
 * Content-type: text/html
 
 ## Headers por Contextos
